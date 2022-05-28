@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { EntryScheme } from './schemes/entry-scheme';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'grillapp-website';
+  entries: [EntryScheme]=[{name: "Test", wishes:{hals:0,bauch:0,wurst:0}}];
 }
